@@ -12,6 +12,7 @@ export const Button: React.FC<ButtonProps & React.AnchorHTMLAttributes<HTMLAncho
   className = '', 
   children, 
   href,
+  onClick,
   ...props 
 }) => {
   const baseClasses = `
@@ -27,6 +28,7 @@ export const Button: React.FC<ButtonProps & React.AnchorHTMLAttributes<HTMLAncho
       <a 
         href={href}
         className={baseClasses}
+        onClick={onClick as React.MouseEventHandler<HTMLAnchorElement>}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
@@ -38,6 +40,7 @@ export const Button: React.FC<ButtonProps & React.AnchorHTMLAttributes<HTMLAncho
     <button
       type="button"
       className={baseClasses}
+      onClick={onClick as React.MouseEventHandler<HTMLButtonElement>}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}

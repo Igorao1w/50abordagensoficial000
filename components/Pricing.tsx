@@ -13,7 +13,7 @@ export const Pricing: React.FC = () => {
             <div className="mb-5">
                 {/* Previous Price Section */}
                 <div className="flex flex-col mb-1">
-                    <h3 className="text-[#555] font-bold text-4xl line-through decoration-4 decoration-[#555] opacity-80">R$17</h3>
+                    <h3 className="text-[#555] font-bold text-4xl line-through decoration-4 decoration-[#555] opacity-80">R$7,00</h3>
                     <p className="text-[#666] text-sm font-medium mt-1">
                         Primeiros 100 compradores
                     </p>
@@ -21,7 +21,7 @@ export const Pricing: React.FC = () => {
 
                 {/* Current Price Section */}
                 <div className="mt-4">
-                    <h3 className="text-[#0f3460] font-extrabold text-6xl tracking-tight">R$27</h3>
+                    <h3 className="text-[#0f3460] font-extrabold text-6xl tracking-tight">R$17</h3>
                     <p className="text-gray-500 text-sm leading-snug mt-3 max-w-sm">
                         De 09 a 11 de fevereiro o valor será R$37. A partir de 11 de fevereiro, R$47.
                     </p>
@@ -65,31 +65,6 @@ export const Pricing: React.FC = () => {
                     COMPRAR AGORA
                 </Button>
             </div>
-        </div>
-
-        {/* Guarantee Badge Section */}
-        <div className="mt-12 text-center">
-            <div className="relative inline-block w-48 h-48">
-                 <img 
-                    src="https://i.postimg.cc/JtwDCqx8/9s-MCGk-JE70Gr-IVjn-Duzn-YQ.webp" 
-                    alt="Garantia 15 dias" 
-                    className="w-full h-full object-contain drop-shadow-xl rounded-full"
-                    loading="lazy"
-                    decoding="async"
-                    width="192"
-                    height="192"
-                 />
-            </div>
-
-            <h3 className="text-2xl font-extrabold text-[#0f3460] mt-6 mb-3">
-                Você tem tempo de usar no Carnaval e se não gostar, ou achar que não funciona, nós devolveremos 100% do seu dinheiro sem complicações.
-            </h3>
-            <h3 className="text-2xl font-extrabold text-[#0f3460] mb-3">
-                Isso significa que você não tem risco.
-            </h3>
-            <h3 className="text-2xl font-extrabold text-[#0f3460]">
-                Ou você ganha, ou você ganha.
-            </h3>
         </div>
       </div>
     </section>
